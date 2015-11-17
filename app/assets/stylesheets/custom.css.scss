@@ -424,6 +424,26 @@ h1{color:#fff;}
   font-size:25px;
 }
 
+
+/* About page
+================================================================*/
+
+.container-about{
+  height: 400px;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 80px 0;
+  text-align: center;
+}
+.container-about h1{
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 45px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition-duration: 1s;
+}
+.container-about h4{color:#fff;}
+
 /* Fix Responsive 
 
 ===========================================================================*/
