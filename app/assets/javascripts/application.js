@@ -38,7 +38,7 @@
 	});
 
 	function scrollVubon() {
-		$('.container-bg a').click(function(){  
+		$('a').click(function(){  
 
 		//Animate
 		$('html, body').stop().animate({
