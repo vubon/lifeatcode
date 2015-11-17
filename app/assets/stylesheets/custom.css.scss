@@ -1,0 +1,457 @@
+
+/* Bootstrap install */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+@font-face {
+    font-family: 'candalregular';
+    src: url('candal-webfont.eot');
+    src: url('candal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('candal-webfont.woff2') format('woff2'),
+         url('candal-webfont.woff') format('woff'),
+         url('candal-webfont.ttf') format('truetype'),
+         url('candal-webfont.svg#candalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+body{
+  color: #777;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+#flash-notice{position:absulate;top:0px;width:100%;}
+/*
+Button CSS 
+===============================================================*/
+.btn{
+  -moz-appearance: none;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: #5a95e5 none repeat scroll 0 0;
+  border-color: #216cd1;
+  border-image: none;
+  border-radius: 0.2rem;
+  border-style: solid;
+  border-width: 0 0 3px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lato",sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  margin: 16px;
+  min-width: 3.2em;
+  padding: 16px 40px;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: background 200ms ease 0s, box-shadow 200ms ease 0s;
+}
+.btn-learnmore,.animated-button, {
+  background:none;
+  border:3px solid #fff;
+  padding: 17.6px 56px;
+  font-size: 1.5em;
+  border-radius: 6px;
+  color:#fff;
+}
+.animated-button:hover{color:#fff;background:#f84e55;border:3px solid #f84e55;color:#fff;transition: all 1s ease 0s;}
+.btn-learnmore:hover{background:#f84e55;border:3px solid #f84e55;color:#fff;transition: all 1s ease 0s;}
+.navbar-brand{font-family: 'Dancing Script', cursive;color:#fff!important;font-size:48px;}
+
+
+
+
+/* Home page Custom CSS 
+
+===============================================*/
+
+.vubon {
+  border: 3px solid #4e59ad;
+  border-radius: 5%;
+  height: 150px;
+  margin: auto;
+  width: 150px;
+}
+
+h1{color:#fff;}
+.dropdown:hover .dropdown-menu {display: block;}
+
+.navbar-default {background-color: #484288;border-color: #333399;}
+.nav > li > a{color:#fff!important;border-right:1px solid #333399;line-height:35px;}
+.nav > li:last-child{border-right:none;}
+.navbar-brand {line-height: 35px;}
+.navbar{min-height:66px;}
+
+
+.dg-content::after {
+  color: rgba(0, 0, 103, 0.05);
+  content: "</>";
+  font-family: Arial,Helvetica,sans-sherif;
+  font-size: 261px;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 115px;
+  z-index: 0;
+}
+
+.bg-life li{text-align:center;color:#fff;font-weight:bold;font-size:16px;}
+
+
+/* sign up page 
+=================================================*/
+
+#sign-up{
+  background-color:#2ECC71;
+}
+.sign-up, .login{
+  background: #f5faff none repeat scroll 0 0;
+  margin-bottom: 59px;
+  margin-top: 75px;
+}
+.sign-text{
+  background: #f84e55 none repeat scroll 0 0;
+  border: 1px solid #f84e55;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: -25px;
+  margin-top: -25px;
+  padding: 15px;
+  width: 780px;
+}
+.sign-footer{
+  background: #dfe6ee none repeat scroll 0 0;
+  border-top: 2px solid #e1e1e1;
+  margin-bottom: -24px;
+  margin-left: -24px;
+  text-align: center;
+  width: 778px;
+  padding: 10px;
+}
+.btn-sign-up{background-color:#f84e55;color:#fff;border-bottom:#c0392b;font-size:16px;}
+.actions {text-align: right;}
+
+/* Login Page 
+=============================================================*/
+
+.check {margin-left: 140px;}
+#login{
+  background-color:#2ECC71;
+}
+.login{
+  background: #f5faff none repeat scroll 0 0;
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+
+
+/* Services area 
+=============================================================*/
+
+#services-area{
+  background:image-url('service.jpg');
+  background-attachment : fixed;
+}
+.overlly{
+  /* background-color:rgba(46,204,113,0.25); */
+  background-color: rgba(102, 102, 204, 0.51);
+  min-height:600px;
+  padding-top:35px;
+}
+.what-i-do{color:#fff;}
+.web{
+  background:#fff;
+  position:relative;
+  min-height: 330px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+.s-icon-bar{
+  border-radius: 65px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  width: 100px;
+  background-color: #6666cc; /* #2ecc71 */
+  color:#fff;
+  cursor: pointer;
+  border: 5px solid;
+  transition: all 300ms linear 0s;
+  line-height: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:-50px;
+  position:absolute;
+  right: 0;
+  left: 0;
+}
+.s-description {
+  margin-top: 50px;
+  position: absolute;
+}
+.s-description h3 {
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: none;
+  color: #333;
+}
+.s-description > p {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px;
+  text-align: center;
+}
+
+.s-icon-bar:hover{
+  background-color:#f84e55;
+  transition: all 1s ease 0s;
+}
+
+/* About section 
+==============================================================*/
+#about{
+  padding-top:35px;
+}
+#about h2 {
+  text-transform: none;
+}
+
+
+/* skill  
+=============================================================*/
+#skill{margin-top:20px;margin-bottom:0px;background:#ddd;}
+
+
+/* Testmonial css  
+==========================================================*/
+#testmonials{
+  min-height:350px;
+  background:#4e59ad ; /* 16a085 */
+  color:#fff;
+}
+.testmonials{padding-top:50px;padding-bottom:50px;}
+.fa-left,.fa-right{color:#fff;}
+.client{
+  width:100px!important;
+  height:100px!important;
+}
+.star-color{color:#5bbc2e;}
+
+/* carousel 
+=================================================================*/
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  
+=======================================================================*/
+
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+
+/* Next button 
+========================================================*/
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+
+/* Changes the position of the indicators 
+=============================================================*/
+
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Footer CSS 
+===========================================================*/
+#footer-top{
+  
+}
+.button-area{
+  position:relative;
+  padding-top: 217px;
+}
+
+#footer-top{
+  background:image-url('footer-top.jpg');
+  min-height:500px;
+}
+.footer-overlly{
+  background:rgba(0,0,0,0.50);
+  min-height: 500px;
+}
+.social{text-align:center;border:1px solid #fff;}
+.social a{color:#fff;}
+.social i{font-size:40px;line-height: 95px;}
+.facebook:hover{background:#45619D;border:1px solid #45619D;}
+.twitter:hover{background-color:#55ACEE;border:1px solid #55ACEE;}
+.google:hover{background-color:#000;border:1px solid #000}
+.email:hover{background-color:#F84E55;border:1px solid #F84E55;}
+
+#footer{
+  background: #484288 none repeat scroll 0 0;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 15px;
+  position: relative;
+}
+
+
+
+
+
+/* Fix Responsive 
+
+===========================================================================*/
+
+/*    Default Layout: 992px. 
+========================================================================= */
+.canvas{
+  width:60%;
+  margin: 0 auto;
+}
+
+
+/*    Tablet Layout: 768px.
+====================================================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .canvas{width:90%;margin: 0 auto;}
+  .web{min-height: 400px;}
+  
+}
+
+
+
+/*    Mobile Layout: 320px.
+=====================================================================*/
+
+@media only screen and (max-width: 767px) {
+  
+.canvas{width:100%;margin: 0 auto;}
+  
+}
+
+
+
+/*    Wide Mobile Layout: 480px.
+============================================================================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  .canvas{
+    width:90%;
+     margin: 0 auto;
+  }
+}
+
+
+/*  Retina media query.
+  Overrides styles for devices with a 
+  device-pixel-ratio of 2+, such as iPhone 4.
+===================================================================================*/
+
+@media 
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  
+  
+}
