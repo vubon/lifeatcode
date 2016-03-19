@@ -38,32 +38,41 @@
 	});
 
 	function scrollVubon() {
-		$('a').click(function(){  
-
-		//Animate
-		$('html, body').stop().animate({
-			scrollTop: $( $(this).attr('href') ).offset().top - 50
+		  $('a').click(function(){  
+			//Toggle Class
+			$(".active").removeClass("active");      
+			$(this).closest('li').addClass("active");
+			var theClass = $(this).attr("class");
+			$('.'+theClass).parent('li').addClass('active');
+			//Animate
+			$('html, body').stop().animate({
+				scrollTop: $( $(this).attr('href') ).offset().top - 50
 			}, 1000);
 			return false;
-			});
-		 $('.scrollTop a').scrollTop();
+		  });
+		  $('.scrollTop a').scrollTop();
 		}
 	scrollVubon();
 
+
 	// tosta notification
-	toastr.options = {
-	    "closeButton": false,
-	    "debug": false,
-	    "positionClass": "toast-bottom-right",
-	    "onclick": null,
-	    "showDuration": "300",
-	    "hideDuration": "1000",
-	    "timeOut": "5000",
-	    "extendedTimeOut": "1000",
-	    "showEasing": "swing",
-	    "hideEasing": "linear",
-	    "showMethod": "fadeIn",
-	    "hideMethod": "fadeOut"
+	toastr.options.onHidden  = {
+		
+	  "closeButton": true,
+	  "debug": false,
+	  "newestOnTop": false,
+	  "progressBar": true,
+	  "positionClass": "toast-top-right",
+	  "preventDuplicates": false,
+	  "onclick": null,
+	  "showDuration": "300",
+	  "hideDuration": "1000",
+	  "timeOut": "5000",
+	  "extendedTimeOut": "1000",
+	  "showEasing": "swing",
+	  "hideEasing": "linear",
+	  "showMethod": "fadeIn",
+	  "hideMethod": "fadeOut"
 	}
 	
 

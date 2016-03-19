@@ -3,6 +3,7 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
 @font-face {
     font-family: 'candalregular';
     src: url('candal-webfont.eot');
@@ -14,6 +15,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 
 
@@ -23,6 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 22px;
   text-transform: uppercase;
 }
+h2, h3{color:#66c;font-weight:bold;}
+
 
 #flash-notice{position:absulate;top:0px;width:100%;}
 /*
@@ -68,7 +72,7 @@ Button CSS
 .animated-button:hover{color:#fff;background:#f84e55;border:3px solid #f84e55;color:#fff;transition: all 1s ease 0s;}
 .btn-learnmore:hover{background:#f84e55;border:3px solid #f84e55;color:#fff;transition: all 1s ease 0s;}
 .navbar-brand{font-family: 'Dancing Script', cursive;color:#fff!important;font-size:48px;}
-
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background:none;}
 
 
 
@@ -88,7 +92,12 @@ h1{color:#fff;}
 .dropdown:hover .dropdown-menu {display: block;}
 
 .navbar-default {background-color: #484288;border-color: #333399;}
-.nav > li > a{color:#fff!important;border-right:1px solid #333399;line-height:35px;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{border:none;}
+.navbar-default .navbar-toggle{border-color:#F84E55;}
+.navbar-default .navbar-toggle .icon-bar{background-color:#fff;}
+.navbar-collapse.in{overflow-y:hidden;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color:#F84E55;}
+.nav > li > a{color:#fff!important;border-right:1px solid #333399;line-height:50px;}
 .nav > li:last-child{border-right:none;}
 .navbar-brand {line-height: 35px;}
 .navbar{min-height:66px;}
@@ -205,7 +214,6 @@ h1{color:#fff;}
   font-size: 30px;
   line-height: 38px;
   text-transform: none;
-  color: #333;
 }
 .s-description > p {
   font-size: 15px;
@@ -231,7 +239,7 @@ h1{color:#fff;}
 
 /* skill  
 =============================================================*/
-#skill{margin-top:20px;margin-bottom:0px;background:#ddd;}
+#skill{padding-top:30px;padding-bottom:30px;background:#ECEEF3;}
 
 
 /* Testmonial css  
@@ -248,14 +256,12 @@ h1{color:#fff;}
   height:100px!important;
 }
 .star-color{color:#5bbc2e;}
+.heading-client{color:#fff;}
 
 /* carousel 
 =================================================================*/
-#quote-carousel 
-{
-  padding: 0 10px 30px 10px;
-  margin-top: 30px;
-}
+#quote-carousel{padding: 0 10px 30px 10px;margin-top: 30px;}
+.client-name{color:#ffffff;}
 
 /* Control buttons  
 =======================================================================*/
@@ -269,17 +275,11 @@ h1{color:#fff;}
   margin-top: 30px;
 }
 /* Previous button  */
-#quote-carousel .carousel-control.left 
-{
-  left: -12px;
-}
+#quote-carousel .carousel-control.left{left: -12px;}
 
 /* Next button 
 ========================================================*/
-#quote-carousel .carousel-control.right 
-{
-  right: -12px !important;
-}
+#quote-carousel .carousel-control.right {right: -12px !important;}
 
 /* Changes the position of the indicators 
 =============================================================*/
@@ -375,7 +375,7 @@ h1{color:#fff;}
   min-height:500px;
 }
 .footer-overlly{
-  background:rgba(0,0,0,0.50);
+  background:rgba(78,89,173,0.50);
   min-height: 500px;
 }
 .social{text-align:center;border:1px solid #fff;}
@@ -384,7 +384,7 @@ h1{color:#fff;}
 .facebook:hover{background:#45619D;border:1px solid #45619D;}
 .twitter:hover{background-color:#55ACEE;border:1px solid #55ACEE;}
 .google:hover{background-color:#000;border:1px solid #000}
-.email:hover{background-color:#F84E55;border:1px solid #F84E55;}
+.iemail:hover{background-color:#F84E55;border:1px solid #F84E55;}
 
 #footer{
   background: #484288 none repeat scroll 0 0;
@@ -427,9 +427,17 @@ h1{color:#fff;}
 
 /* About page
 ================================================================*/
+.about_me{padding-top:60px;padding-bottom:60px;background-color:#f2f2f2;}
+blockquote{font-size:14.5px;border-left:8px solid #6633cc;}
+.vubonroy{
+  border-radius:100%;
+  width:200px;
+  height:200px;
+  border:5px solid #6633cc;
+}
 
+.about{background-color:#673AB7;}
 .container-about{
-  height: 400px;
   margin: 0 auto;
   max-width: 900px;
   padding: 80px 0;
@@ -442,7 +450,157 @@ h1{color:#fff;}
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   transition-duration: 1s;
 }
-.container-about h4{color:#fff;}
+.container-about h4{color:#fff;line-height:30px;}
+.dg-about::after {
+  color: rgba(223, 240, 216, 0.11);
+  content: "{}";
+  font-family: Arial,Helvetica,sans-sherif;
+  font-size: 220px;
+  line-height: 1;
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  z-index: 0;
+}
+
+#services-area-about{
+  background:image-url('about-service.jpg');
+  background-attachment : fixed;
+  min-height:700px;
+  
+}
+.overlly-about{
+  /* background-color:rgba(46,204,113,0.25); */
+  background-color: rgba(0, 0, 0, 0.51);
+  padding-top:35px;
+  min-height:700px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+.diamond h3, h4{font-family: 'Roboto Slab', serif;font-weight:bold;text-transform: none;line-height: 5px;}
+.diamond h4{font-size:17px;}
+.diamond p{font-family: 'Roboto Slab', serif;font-weight:normal;font-size:15px;}
+
+p{font-size:15px;}
+.diamond{
+  background:#f3f3f3;
+  width:200px;
+  height:200px;
+  color:#777;
+  border-radius:10px;
+  border-width:10px;
+  border-style:solid;
+  border-color:#6666cc #6633cc;
+  /* Rotate */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+/* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    margin: 60px 0 10px 310px;
+}
+.content{
+	left: 10px;
+	position: absolute;
+	text-align: center;
+	top: 15px;
+	width: 200px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(43deg);
+    -moz-transform: rotate(43deg);
+    -ms-transform: rotate(43deg);
+    -o-transform: rotate(43deg); 
+}
+
+.first{}
+.second{margin: -60px 165px;}
+.third{margin-top: 10px;}
+.fourth{margin: -360px 455px;}
+
+.database,.ruby {padding-top: 50px;}
+.backH3,.frontH3{padding-top: 30px;line-height: 25px !important;}
+.cloud {margin-left: -20px;padding-top: 5px;width: 175px;}
+
+.text_about {color: #fff;margin-bottom: 20px;margin-top: 530px;text-align: center;}
+
+/* Responsive */
+
+/*    Tablet Layout: 768px.
+====================================================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .back-end {top: 532px;}
+  #services-area-about{min-height:1200px;}
+  .text_about{margin-top:1045px;}
+}
+
+
+
+/*    Mobile Layout: 320px.
+=====================================================================*/
+
+@media only screen and (max-width: 767px) {
+  .back-end {top: 810px;}
+  .first {margin-left: 150px;}
+  .second {margin: 80px 150px;}
+  .third {margin-left: 150px;margin-top: 372px;}
+  .fourth {margin: -495px 150px;}
+  #services-area-about{min-height:2300px;}
+  .text_about{margin-top:1600px;}
+}
+
+
+
+/*    Wide Mobile Layout: 480px.
+============================================================================*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .back-end {top: 532px;}
+  .first {margin-left: 290px;}
+  .second {margin: -60px 145px;}
+  .third {margin-left: 145px;margin-top: 160px;}
+  .fourth {margin: -360px 290px;}
+  #services-area-about{min-height:1495px;}
+  .text_about{margin-top:1045px;}
+}
+
+
+
+
+/* Contact page
+================================================================*/
+.dg-contact::after {
+  color: rgba(223, 240, 216, 0.11);
+  content: "\f003";
+  font-family: FontAwesome;
+  font-size: 220px;
+  line-height: 1;
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  z-index: 0;
+}
+.icon_color{color:#6633cc;}
+.submit_button{
+  color:#6666cc;
+  background:none;
+  border:3px solid #6633cc;
+  font-size:13px;
+}
+
+.submit_button:hover{
+  color:#fff;
+  background:#6633cc;
+  border:3px solid #6633cc;
+}
+
+
 
 /* Fix Responsive 
 
@@ -473,7 +631,9 @@ h1{color:#fff;}
 @media only screen and (max-width: 767px) {
   
 .canvas{width:100%;margin: 0 auto;}
-  
+.btn-learnmore, .animated-button {font-size: 1.3em;padding: 18.6px 15px;}
+
+
 }
 
 

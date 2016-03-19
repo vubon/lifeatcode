@@ -75,6 +75,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mail_form (1.5.1)
+      actionmailer (>= 3.2, < 5)
+      activemodel (>= 3.2, < 5)
     method_source (0.8.2)
     mime-types (2.6.2)
     mini_portile (0.6.2)
@@ -131,6 +134,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     slop (3.6.0)
     spring (1.4.0)
     sprockets (3.4.0)
@@ -168,12 +174,14 @@ DEPENDENCIES
   font-awesome-rails (~> 4.4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  mail_form
   pg
   pry
   rails (= 4.2.4)
   rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form
   spring
   sqlite3
   toastr-rails
