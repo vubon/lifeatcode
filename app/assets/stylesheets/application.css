@@ -15,3 +15,7 @@
  *= require_self
  */
 
+@import "animation.css.scss";
+@import "custom.css.scss";
+@import "home-bg-animation.css.scss";
+@import "text-animation.css.scss";
